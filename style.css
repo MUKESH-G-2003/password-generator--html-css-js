@@ -1,0 +1,70 @@
+
+.container, .range{
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+.range button{
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 40px;
+    font-weight: 500;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.range button:hover{
+    background-color: black;
+    color: white;
+}
+
+#bar{
+    width: 200px;
+    cursor: pointer;
+}
+.password div, .char{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.characters{
+    display: flex;
+    gap: 5px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+body .content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: antiquewhite;
+    width: 500px;
+    padding: 20px;
+    border: 10px solid rosybrown;
+}
+
+#output{
+    padding: 10px;
+    background-color: lightgreen;
+    font-weight: 700;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#output:hover{
+    background-color: lightcoral;
+}
+#pass{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    background-color: greenyellow;
+    border: 3px solid darkred;
+    padding: 10px;
+}

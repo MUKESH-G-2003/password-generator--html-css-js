@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pass-generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="container">
+            <div class="password">
+                <div>Password Length:</div>
+                <div id="length">13</div>
+            </div>
+            <div class="range">
+                <button id="minus" onclick="Decrease()">-</button>
+                <input type="range" min="5" max="20" id="bar" onclick="Increase()">
+                <button id="plus" onclick="Increase()">+</button>
+            </div>
+        </div>
+        <div class="characters">
+            <div class="char">Characters Used:</div>
+            <div>
+                <input type="checkbox" id="ABC">
+                <label for="">ABC</label>
+            </div>
+            <div>
+                <input type="checkbox" id="abc" checked>
+                <label for="">abc</label>
+            </div>
+            <div>
+                <input type="checkbox" id="123">
+                <label for="">123</label>
+            </div>
+            <div>
+                <input type="checkbox" id="@#$">
+                <label for="">@#$</label>
+            </div>
+        </div>
+        <div style="display: flex; justify-content: center;">
+            <button id="output" onclick="GeneratePassword()">Generate Password</button>
+        </div>
+        <div id="pass">
+            Password: *********
+        </div>
+    </div>
+</body>
+
+</html>
